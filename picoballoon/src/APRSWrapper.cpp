@@ -296,7 +296,7 @@ void APRSWrapper::tx_aprs()
     else if(aprstxstatus == 1)
     {
         char s[10];
-        strncpy_P(s, PSTR("TA2MUN"), 7);
+        strncpy_P(s, PSTR("CHANGEME"), 7);
         if(frame.APRSSSID) snprintf_P(s + strlen(s), 4, PSTR("-%i"), frame.APRSSSID);
         ax25_frame(
                    frame.APRSCallSign, frame.APRSSSID,
@@ -309,7 +309,7 @@ void APRSWrapper::tx_aprs()
     else if(aprstxstatus == 2)
     {
         char s[10];
-        strncpy_P(s, PSTR("TA2MUN"), 7);
+        strncpy_P(s, PSTR("CHANGEME"), 7);
         if(frame.APRSSSID) snprintf_P(s + strlen(s), 4, PSTR("-%i"), frame.APRSSSID);
         ax25_frame(
                    frame.APRSCallSign, frame.APRSSSID,
@@ -322,7 +322,7 @@ void APRSWrapper::tx_aprs()
     else if(aprstxstatus = 3)
     {
         char s[10];
-        strncpy_P(s, PSTR("TA2MUN"), 7);
+        strncpy_P(s, PSTR("CHANGEME"), 7);
         if(frame.APRSSSID) snprintf_P(s + strlen(s), 4, PSTR("-%i"), frame.APRSSSID);
         ax25_frame(
                    frame.APRSCallSign, frame.APRSSSID,
@@ -349,7 +349,7 @@ void APRSWrapper::sendParameters()
     if(aprstxstatus == 1)
     {
         char s[10];
-        strncpy_P(s, PSTR("TA2MUN"), 7);
+        strncpy_P(s, PSTR("CHANGEME"), 7);
         if(frame.APRSSSID) snprintf_P(s + strlen(s), 4, PSTR("-%i"), frame.APRSSSID);
         ax25_frame(
                    frame.APRSCallSign, frame.APRSSSID,
@@ -363,7 +363,7 @@ void APRSWrapper::sendParameters()
     else if(aprstxstatus == 2)
     {
         char s[10];
-        strncpy_P(s, PSTR("TA2MUN"), 7);
+        strncpy_P(s, PSTR("CHANGEME"), 7);
         if(frame.APRSSSID) snprintf_P(s + strlen(s), 4, PSTR("-%i"), frame.APRSSSID);
         ax25_frame(
                    frame.APRSCallSign, frame.APRSSSID,
@@ -377,7 +377,7 @@ void APRSWrapper::sendParameters()
     else if(aprstxstatus = 3)
     {
         char s[10];
-        strncpy_P(s, PSTR("TA2MUN"), 7);
+        strncpy_P(s, PSTR("CHANGEME"), 7);
         if(frame.APRSSSID) snprintf_P(s + strlen(s), 4, PSTR("-%i"), frame.APRSSSID);
         ax25_frame(
                    frame.APRSCallSign, frame.APRSSSID,
